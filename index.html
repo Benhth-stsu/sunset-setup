@@ -3,93 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SUNSET SETUP – entdecke Gaming-Zubehör und finde dein perfektes Setup.">
-  <title>SUNSET SETUP — Find your perfect setup</title>
+  <meta name="description" content="SUNSET SETUP – Gaming-Produkte, Empfehlungen und Setup-Konfigurator.">
+  <title>SUNSET SETUP — Dein Gaming-Setup</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sky" aria-hidden="true">
-    <div class="sun"></div><div class="horizon"></div>
-    <div class="city"></div>
-    <div class="palm palm-left"><i></i></div>
-    <div class="palm palm-right"><i></i></div>
-  </div>
-  <header class="topbar">
-    <a class="brand" href="#home">SUNSET <span>SETUP</span></a>
-    <nav aria-label="Hauptnavigation">
-      <a href="#home">Startseite</a>
-      <a href="#empfehlungen">Empfehlungen</a>
-      <a href="#shop">Shop</a>
-      <a href="#konfigurator">Konfigurator</a>
-      <a href="#merkliste">Merkliste <span id="saved-count">0</span></a>
-    </nav>
-    <button class="menu-toggle" aria-label="Menü öffnen" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
-  </header>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="brand-mark">S</span><span>SUNSET <b>SETUP</b></span></a>
+  <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+  <nav id="main-nav">
+    <a class="active" href="#home">Home</a><a href="#shop">Shop</a><a href="#konfigurator">Konfigurator</a><a href="#guides">Guides</a><a href="#faq">FAQ</a>
+    <a class="nav-icon" href="#merkliste" aria-label="Merkliste">♡ <span id="saved-count">0</span></a>
+  </nav>
+</header>
 
-  <main id="home">
-    <section class="hero">
-      <p class="eyebrow">GAMING • STYLE • SETUP</p>
-      <h1>FIND YOUR<br><em>PERFECT SETUP.</em></h1>
-      <p class="intro">Entdecke Gaming-Produkte, die zu deinem Stil, deinen Wünschen und deinem Budget passen.</p>
-      <a class="primary-btn" href="#bereiche">JETZT ENTDECKEN <span>↘</span></a>
-      <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
-    </section>
-
-    <section class="areas" id="bereiche">
-      <article class="area-card" id="empfehlungen">
-        <div class="card-number">01 / DISCOVER</div>
-        <div class="card-icon">✦</div>
-        <h2>Schnelle<br>Empfehlungen</h2>
-        <p>Du weißt noch nicht genau, was du suchst? Entdecke ausgewählte Gaming-Produkte und neue Ideen für dein Setup.</p>
-        <a href="#shop" class="text-link">EMPFEHLUNGEN ENTDECKEN <span>↗</span></a>
-      </article>
-      <article class="area-card" id="shop">
-        <div class="card-number">02 / EXPLORE</div>
-        <div class="card-icon">◈</div>
-        <h2>Unser<br>Shop</h2>
-        <p>Monitore, Headsets, Controller und mehr. Stöbere durch Kategorien und finde Produkte passend zu deinem Budget.</p>
-        <a href="#produktbereiche" class="text-link">ZUM SHOP <span>↗</span></a>
-      </article>
-      <article class="area-card" id="konfigurator">
-        <div class="card-number">03 / CREATE</div>
-        <div class="card-icon">⌁</div>
-        <h2>Setup-<br>Konfigurator</h2>
-        <p>Beantworte ein paar kurze Fragen und erhalte Empfehlungen, die zu deinen Gaming-Wünschen passen.</p>
-        <a href="#konfigurator-start" class="text-link">JETZT KONFIGURIEREN <span>↗</span></a>
-      </article>
-    </section>
-
-    <section class="lower-section" id="produktbereiche">
-      <p class="eyebrow">THE COLLECTION</p>
-      <h2>Alles für dein Setup.</h2>
-      <div class="category-row">
-        <span>Monitore</span><span>Headsets</span><span>Stühle</span><span>Controller</span><span>Tastaturen</span><span>Zubehör</span>
+<main id="home">
+  <section class="hero">
+    <div class="hero-scene" aria-hidden="true">
+      <div class="sun"></div><div class="sun-glow"></div>
+      <div class="distant-hills"></div><div class="city city-back"></div><div class="city city-front"></div>
+      <div class="water"></div><div class="water-line"></div>
+      <div class="palm palm-left"><i></i></div><div class="palm palm-right"><i></i></div>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">SUNSET SETUP</p>
+      <h1>Dein Gaming-Setup.<br><em>Auf das nächste Level.</em></h1>
+      <p class="intro">Top-Produkte, smarte Empfehlungen und alles, was du für dein Setup brauchst.</p>
+      <div class="hero-actions">
+        <a class="button button-hot" href="#empfehlungen">↗ &nbsp; Schnelle Empfehlungen</a>
+        <a class="button button-glass" href="#shop">♡ &nbsp; Unser Shop</a>
+        <a class="button button-glass" href="#konfigurator">⚙ &nbsp; Konfigurator</a>
       </div>
-      <p class="muted">Der Shop wird als Nächstes mit echten Produkten, Preisen und Filtern gefüllt.</p>
-    </section>
+      <div class="trust-row"><span>◇ &nbsp; 100% kostenlos</span><span>✦ &nbsp; Top-Produkte</span><span>◎ &nbsp; Für alle Plattformen</span></div>
+    </div>
+    <div class="scene-caption">FIND YOUR STYLE. BUILD YOUR SETUP.</div>
+  </section>
 
-    <section class="lower-section configurator" id="konfigurator-start">
-      <p class="eyebrow">MAKE IT YOURS</p>
-      <h2>Was ist dir am wichtigsten?</h2>
-      <div class="choices">
-        <button onclick="choose('Bildqualität')">Bildqualität</button>
-        <button onclick="choose('Sound')">Sound</button>
-        <button onclick="choose('Komfort')">Komfort</button>
-      </div>
-      <p id="choice-result" class="muted" aria-live="polite">Wähle einen Bereich – wir bauen den Konfigurator Schritt für Schritt aus.</p>
-    </section>
+  <section class="section intro-section" id="empfehlungen">
+    <div class="section-heading"><p class="eyebrow">DISCOVER YOUR NEXT UPGRADE</p><h2>Schnelle Empfehlungen</h2><p>Ein guter Start für dein nächstes Setup.</p></div>
+    <div class="feature-grid">
+      <a class="feature-card" href="#shop"><span class="feature-symbol">✦</span><div><small>FÜR DEIN BILD</small><h3>Monitore entdecken</h3><p>Finde den passenden Bildschirm für dein Spielerlebnis.</p></div><span class="arrow">↗</span></a>
+      <a class="feature-card" href="#shop"><span class="feature-symbol">♫</span><div><small>FÜR DEINEN SOUND</small><h3>Headsets entdecken</h3><p>Mehr Klarheit und Komfort bei jeder Session.</p></div><span class="arrow">↗</span></a>
+      <a class="feature-card" href="#konfigurator"><span class="feature-symbol">⌘</span><div><small>DEIN PERSÖNLICHES SETUP</small><h3>Konfigurator starten</h3><p>Beantworte ein paar Fragen und finde passende Ideen.</p></div><span class="arrow">↗</span></a>
+    </div>
+  </section>
 
-    <section class="lower-section" id="merkliste">
-      <p class="eyebrow">YOUR SAVED PICKS</p>
-      <h2>Deine Merkliste.</h2>
-      <p class="muted">Hier erscheinen später die Produkte, die du speichern möchtest.</p>
-    </section>
-  </main>
+  <section class="section shop-section" id="shop">
+    <div class="section-heading"><p class="eyebrow">THE COLLECTION</p><h2>Unser Shop</h2><p>Gaming-Essentials – übersichtlich sortiert.</p></div>
+    <div class="shop-toolbar"><div class="filters" id="filters">
+      <button class="filter active" data-filter="Alle">Alle</button><button class="filter" data-filter="Monitore">Monitore</button><button class="filter" data-filter="Headsets">Headsets</button><button class="filter" data-filter="Stühle">Stühle</button><button class="filter" data-filter="Controller">Controller</button><button class="filter" data-filter="Tastaturen">Tastaturen</button>
+    </div><label class="sort-label">Sortieren <select id="sort"><option value="featured">Empfohlen</option><option value="low">Preis aufsteigend</option><option value="high">Preis absteigend</option></select></label></div>
+    <div class="product-grid" id="product-grid"></div>
+    <p class="shop-note">Produktbeispiele zur Gestaltung. Preise und Händlerlinks werden vor Veröffentlichung echter Angebote ergänzt.</p>
+  </section>
 
-  <footer><a class="brand" href="#home">SUNSET <span>SETUP</span></a><p>Find your style. Build your setup.</p><small>Hinweis: SUNSET SETUP ist eine unabhängige Konzeptmarke und nicht mit einem Videospielhersteller verbunden.</small></footer>
-  <script src="script.js"></script>
+  <section class="section configurator-section" id="konfigurator">
+    <div class="config-intro"><p class="eyebrow">DEIN SETUP-GUIDE</p><h2>Der perfekte<br>Setup-Mix.</h2><p>Wähle deine Plattform und was dir am wichtigsten ist. Wir zeigen dir passende Startpunkte.</p></div>
+    <div class="config-panel">
+      <div class="step-label">SCHRITT 1 VON 2</div><h3>Auf welcher Plattform spielst du?</h3>
+      <div class="platforms" id="platforms"><button class="platform selected" data-value="PlayStation 5"><span>◉</span>PlayStation 5</button><button class="platform" data-value="Xbox Series X|S"><span>◉</span>Xbox Series X|S</button><button class="platform" data-value="PC"><span>▣</span>PC</button></div>
+      <div class="step-label second-step">SCHRITT 2 VON 2</div><h3>Was ist dir am wichtigsten?</h3>
+      <div class="priorities" id="priorities"><button class="priority selected" data-value="Bildqualität">Bildqualität</button><button class="priority" data-value="Sound">Sound</button><button class="priority" data-value="Komfort">Komfort</button><button class="priority" data-value="Mix">Ein guter Mix</button></div>
+      <button class="button button-hot config-submit" id="config-submit">Meine Empfehlungen anzeigen ↗</button>
+      <p class="config-result" id="config-result" aria-live="polite">Wähle deine Optionen und starte deine Empfehlung.</p>
+    </div>
+  </section>
+
+  <section class="section wishlist-section" id="merkliste">
+    <div class="section-heading"><p class="eyebrow">SAVE YOUR FAVOURITES</p><h2>Deine Merkliste</h2><p>Hier findest du deine gespeicherten Favoriten.</p></div>
+    <div id="wishlist-items" class="wishlist-items"><p class="empty-state">Noch nichts gespeichert. Wähle im Shop das Herz bei einem Produkt.</p></div>
+  </section>
+
+  <section class="section faq-section" id="faq"><div><p class="eyebrow">GOOD TO KNOW</p><h2>Ein Setup, das zu dir passt.</h2></div><p>SUNSET SETUP hilft dir dabei, Gaming-Zubehör zu entdecken und Ideen für dein persönliches Setup zu sammeln. Die Merkliste speichert deine Auswahl direkt in deinem Browser.</p></section>
+</main>
+<footer><a class="brand" href="#home"><span class="brand-mark">S</span><span>SUNSET <b>SETUP</b></span></a><p>Find your style. Build your setup.</p><small>Unabhängiges Konzeptprojekt. Produktpreise und Verfügbarkeit müssen vor Veröffentlichung geprüft werden.</small></footer>
+<script src="script.js"></script>
 </body>
 </html>
